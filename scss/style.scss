@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import '../reset.css';
+
+.container {
+  max-width: 600px;
+  min-width: 280px;
+  padding: 95px 58px;
+
+  .header {
+    .logo {
+      margin-bottom: 40px;
+      img {
+        width: 170px;
+        height: 50px;
+      }
+    }
+  }
+  .content {
+    border: 1px solid #eee;
+    border-left: none;
+    border-right: none;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #545454;
+      margin-bottom: 40px;
+    }
+    .desc {
+      margin-bottom: 40px;
+      font-size: 18px;
+        .desc-detail {
+          &:nth-child(2) {
+            margin-bottom: 30px;
+          }
+        }
+        .highlight {
+          color: #3498db;
+        }
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 48px;
+      background: #0072f6;
+      color: #fff;
+      border-radius: 10px;
+    }
+  }
+  .footer {
+    .contact {
+      font-size: 14px;
+      color: #545454;
+    }
+  }
+}
