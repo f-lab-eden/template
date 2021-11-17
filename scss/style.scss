@@ -1,59 +1,82 @@
 @charset "UTF-8";
 
-@import '../reset.css';
+@import '_reset.css';
 
 .container {
-  max-width: 600px;
+  padding: 95px 96px 71px 50px;
+  max-width: 700px;
   min-width: 280px;
-  padding: 95px 58px;
+  letter-spacing: -0.075em;
+
+  // 짝수로 조정?
 
   .header {
+    margin-bottom: 54px;
+
     .logo {
-      margin-bottom: 40px;
+      //짝수
+      margin-bottom: 33px;
+
       img {
         width: 170px;
         height: 50px;
       }
     }
   }
+
   .content {
-    border: 1px solid #eee;
-    border-left: none;
-    border-right: none;
-    padding: 40px 0;
-    margin-bottom: 40px;
+    padding: 54px 0 58px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
     .title {
       font-size: 36px;
-      font-weight: bold;
+      font-weight: 700;
       color: #545454;
-      margin-bottom: 40px;
+      //짝수
+      margin-bottom: 37px;
     }
+
     .desc {
       margin-bottom: 40px;
       font-size: 18px;
-        .desc-detail {
-          &:nth-child(2) {
-            margin-bottom: 30px;
-          }
+      font-weight: 300;
+      color: #545454;
+
+      .desc-detail {
+        &:nth-child(2) {
+          margin-bottom: 30px;
         }
-        .highlight {
-          color: #3498db;
-        }
+      }
+
+      .highlight {
+        color: #00B2FF;
+        text-decoration: underline;
+      }
     }
+
     .button {
+      padding: 12px 36px;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 180px;
-      height: 48px;
       background: #0072f6;
       color: #fff;
       border-radius: 10px;
+      outline: 0;
+      border: 0;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Noto Sans KR', sans-serif;
     }
   }
+
   .footer {
+    //짝수
+    padding: 37px 0 72px 0;
     .contact {
       font-size: 14px;
+      font-weight: 300;
       color: #545454;
     }
   }
