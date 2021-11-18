@@ -3,19 +3,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #e5e5e5; }
+  overflow-x: hidden; }
   .container-wrapper .container {
-    padding: 95px 96px 71px 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    padding: 94px 96px 70px 50px;
     max-width: 700px;
     min-width: 280px;
-    letter-spacing: -10px; }
+    letter-spacing: -1.5px; }
     .container-wrapper .container .header {
       margin-bottom: 54px; }
       .container-wrapper .container .header .logo {
         margin-bottom: 33px; }
         .container-wrapper .container .header .logo img {
-          width: 170px;
-          height: 50px; }
+          height: 50px;
+          object-fit: contain; }
     .container-wrapper .container .content {
       padding: 54px 0 58px;
       border-top: 1px solid #eee;
@@ -35,21 +38,28 @@
         .container-wrapper .container .content .desc .highlight {
           color: #00B2FF;
           text-decoration: underline; }
-      .container-wrapper .container .content .button {
-        padding: 12px 36px;
+      .container-wrapper .container .content .button-box {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #0072f6;
-        color: #fff;
-        border-radius: 10px;
-        outline: 0;
-        border: 0;
-        font-size: 18px;
-        font-weight: bold;
-        font-family: 'Noto Sans KR', sans-serif; }
+        align-items: center; }
+        .container-wrapper .container .content .button-box .button {
+          padding: 12px 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #0072f6;
+          color: #fff;
+          border-radius: 10px;
+          outline: 0;
+          border: 0;
+          font-size: 18px;
+          font-weight: bold;
+          font-family: 'Noto Sans KR', sans-serif;
+          cursor: pointer; }
+          .container-wrapper .container .content .button-box .button .button-desc {
+            text-decoration: none;
+            color: #fff; }
     .container-wrapper .container .footer {
-      padding: 37px 0 72px 0; }
+      padding-top: 36px; }
       .container-wrapper .container .footer .contact {
         font-size: 14px;
         font-weight: 300;

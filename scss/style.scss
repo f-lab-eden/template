@@ -6,12 +6,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #e5e5e5;
+  overflow-x: hidden;
+  //padding: 50px;
+  //background: #e5e5e5;
+
   .container {
-    padding: 95px 96px 71px 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    padding: 94px 96px 70px 50px;
     max-width: 700px;
     min-width: 280px;
-    letter-spacing: -10px;
+    letter-spacing: -1.5px;
 
     // 짝수로 조정?
 
@@ -23,8 +29,8 @@
         margin-bottom: 33px;
 
         img {
-          width: 170px;
           height: 50px;
+          object-fit: contain;
         }
       }
     }
@@ -60,25 +66,36 @@
         }
       }
 
-      .button {
-        padding: 12px 36px;
+      .button-box {
         display: flex;
         align-items: center;
-        justify-content: center;
-        background: #0072f6;
-        color: #fff;
-        border-radius: 10px;
-        outline: 0;
-        border: 0;
-        font-size: 18px;
-        font-weight: bold;
-        font-family: 'Noto Sans KR', sans-serif;
+        .button {
+          padding: 12px 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #0072f6;
+          color: #fff;
+          border-radius: 10px;
+          outline: 0;
+          border: 0;
+          font-size: 18px;
+          font-weight: bold;
+          font-family: 'Noto Sans KR', sans-serif;
+          cursor: pointer;
+
+          .button-desc {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
       }
+
     }
 
     .footer {
       //짝수
-      padding: 37px 0 72px 0;
+      padding-top: 36px;
       .contact {
         font-size: 14px;
         font-weight: 300;
