@@ -4,17 +4,15 @@
 
 .container-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 38px 0;
   overflow-x: hidden;
-  //padding: 50px;
   //background: #e5e5e5;
 
   .container {
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
     background: #fff;
-    padding: 94px 96px 70px 50px;
+    padding: 44px 42px 70px 50px;
     max-width: 700px;
     min-width: 280px;
     letter-spacing: -1.5px;
@@ -22,11 +20,10 @@
     // 짝수로 조정?
 
     .header {
-      margin-bottom: 54px;
+      margin-bottom: 34px;
 
       .logo {
         //짝수
-        margin-bottom: 33px;
 
         img {
           height: 50px;
@@ -36,7 +33,7 @@
     }
 
     .content {
-      padding: 54px 0 58px;
+      padding: 52px 0 56px;
       border-top: 1px solid #eee;
       border-bottom: 1px solid #eee;
 
@@ -45,17 +42,17 @@
         font-weight: 700;
         color: #545454;
         //짝수
-        margin-bottom: 37px;
+        margin-bottom: 38px;
       }
 
       .desc {
-        margin-bottom: 40px;
+        margin-bottom: 62px;
         font-size: 18px;
         font-weight: 300;
         color: #545454;
 
         .desc-detail {
-          &:nth-child(2) {
+          &:nth-child(3) {
             margin-bottom: 30px;
           }
         }
@@ -95,7 +92,7 @@
 
     .footer {
       //짝수
-      padding-top: 36px;
+      padding-top: 38px;
       .contact {
         font-size: 14px;
         font-weight: 300;
